@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lemon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+    <link rel="icon" href="CSS/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top-container">
+        <div class="text-center">
+
+            <h1 class="header1">Welcome</h1>
+            <h5 class="mini">to</h5>
+            <img src="images/Group 1.png">
+            <div class="buttons">
+                <a class="btn btn-primary btn-lg" href="Signup.html" role="button">Signup</a>
+                <button class="btn btn-dark btn-lg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+            </div>
+
+        </div>
+    </div>
+        
+        <div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="images/Group 1.png" alt="Lemon" class="lemon">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <!-- Navigation -->
+    <div class="container sticky-top navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-light" id="maiNav">
+            <div class="container">
+                <a class="brand-title js-scroll-trigger" href="#header"><img class="logo" src="images/Group 2.png" alt="lemon"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#hr">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">What do You Want To Learn?</h1>
+              <p class="lead">Choose Your Category</p>
+            </div>
+          </div>
+
+                  <section id="tracks">
+                        <div class="container">	
+                                <div class="text-white">
+                                        <h1 class="text-black">Tracks</h1><br>
+                                </div>
+                            
+                            <div class="row">
+                                <div class="track-card">
+                                    <a href="categories.html"><img class="img-fluid" src="images/web.png"></a>
+                                    <h3 class="text-black" align="center">Development</h3>
+                                </div>
+                                 <div class="track-card">
+                                    <img class="img-fluid" src="images/sketch.png">
+                                    <h3 class="text-black" align="center">Design</h3>
+                                </div>
+                                <div class="track-card">
+                                <img class="img-fluid" src="images/target.png">
+                                    <h3 class="text-black" align="center">Marketing</h3>
+                                </div>
+                                <div class="track-card">
+                                <img class="img-fluid" src="images/report.png">
+                                    <h3 class="text-black" align="center">Business</h3>
+                                </div>
+                                <div class="track-card">
+                                <img class="img-fluid" src="images/heartbeat.png">
+                                    <h3 class="text-black" align="center">Health</h3>
+                                </div>
+                                <div class="track-card">
+                                   <img class="img-fluid" src="images/album.png">
+                                    <h3 class="text-black" align="center">Music</h3>
+                                </div>
+                                <div class="track-card">
+                                    <img class="img-fluid" src="images/camera.png">
+                                    <h3 class="text-black" align="center">Photography</h3>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </section>
+
+                    <hr id="hr">
+        <div class="contact-me">
+            <h2 class="touch">Get In Touch</h2>
+            <div class="btn-btn">
+            <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+            </div>
+
+                    <div class="bottom-container">
+                        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+                        <a class="footer-link" href="https://twitter.com/">Twitter</a>
+                        <a class="footer-link" href="https://www.lemon.co/">Website</a>
+                        <p class="copyright">© 2019 Lemon @ UI.</p>
+                    </div>
+
+                    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
